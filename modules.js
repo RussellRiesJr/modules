@@ -13,8 +13,8 @@ var solarSystem = (function () {
   var planets = ["Mercury", "Venus", "Earth", "Mars", "Saturn", "Jupiter", "Uranus", "Neptune"];
   var currentSpacecraft = [];
   var planetsLanded = 2;
+  var otherObjects = ["Kuiper Belt", "Oort Cloud", "Russell's Teapot"];
 
-console.log(planetsLanded);
   return {
     getPlanet: function() {
       return planets;
@@ -32,5 +32,12 @@ console.log(planetsLanded);
     getCurrentSpacecraft: function() {
       return currentSpacecraft;
     },
+    setOtherObjects: function(name) {
+      otherObjects.push(name);
+    },
+    getOtherObjects: function() {
+      return otherObjects;
+    },
   }
 }());
+console.log(solarSystem);
