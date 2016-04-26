@@ -19,8 +19,8 @@ var solarSystem = (function () {
     getPlanet: function() {
       return planets;
     },
-    setPlanetLanding: function(num) {
-      planets.push(num);
+    setPlanetLanding: function(newNum) {
+      planetsLanded = newNum;
     },
     getPlanetsLanded: function() {
       return planetsLanded;
